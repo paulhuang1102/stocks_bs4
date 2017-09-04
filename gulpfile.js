@@ -16,7 +16,6 @@ gulp.task('pug', function() {
             pretty: true
         }))
         .pipe(gulp.dest('./docs'))
-
 });
 
 gulp.task('sass', function() {
@@ -54,7 +53,7 @@ gulp.task('babel', function() {
 });
 
 gulp.task('watch', function() {
-    gulp.watch(['source/*.pug', 'source/sass/*.sass', 'source/js/*.js'], [ 'pug', 'sass', 'babel']);
+    gulp.watch(['source/*.pug', 'source/partials/*.pug', 'source/sass/*.sass', 'source/js/*.js'], [ 'pug', 'pug', 'sass', 'babel']);
 });
 
 gulp.task('default', ['connect', 'watch']);
