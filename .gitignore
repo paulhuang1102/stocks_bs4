@@ -58,3 +58,7 @@ node_modules/
 ####################
 sftp-config*
 *.sublime-*
+
+# lock #
+yarn.lock
+packgae.lock.json
